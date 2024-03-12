@@ -1,0 +1,18 @@
+{% extends "aplicacion/index.html" %}
+
+{% block titulo %}
+<h1 class="mb-5">Clientes </h1>
+{% endblock titulo %}
+
+{% block contenido %}
+
+<form action="" method="post">
+    <h2>  Subscripcion para recibir notificaciones </h2>
+    {% csrf_token %}
+    <table>
+    {{form.as_table}}
+    </table>
+    <input type="submit" Value="guardar">
+</form>
+
+{% endblock contenido %}

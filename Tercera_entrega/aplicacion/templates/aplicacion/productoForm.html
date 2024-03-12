@@ -1,0 +1,15 @@
+{% extends "aplicacion/index.html" %}
+
+{% block titulo %}
+<h1 class="mb-5">Productos (formulario)</h1>
+{% endblock titulo %}
+
+{% block contenido %}
+
+<form action="" method="post">
+    {% csrf_token %}
+    {{ form.as_table }}
+    <input type="submit" value="Guardar">
+</form>
+
+{% endblock contenido %}
